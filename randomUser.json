@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Carolina", "last": "Méndez" },
+      "location": {
+        "street": { "number": 828, "name": "Calle del Arenal" },
+        "city": "Bilbao",
+        "state": "Castilla y León",
+        "country": "Spain",
+        "postcode": 53290,
+        "coordinates": { "latitude": "-30.9799", "longitude": "89.1611" },
+        "timezone": {
+          "offset": "-1:00",
+          "description": "Azores, Cape Verde Islands"
+        }
+      },
+      "email": "carolina.mendez@example.com",
+      "login": {
+        "uuid": "38c61b25-7bc6-44a4-8fbc-87024d66f72e",
+        "username": "smalllion529",
+        "password": "qwerqwer",
+        "salt": "UXArQsV7",
+        "md5": "f255f5cf7d9a0b0ff3129ef2a32dabc4",
+        "sha1": "84fda3aa037418edafe107346b728141ffaa07be",
+        "sha256": "4cfc75afd1c873d5a6050e3d5f7c913f657e122a77776e274191bf43436a0e37"
+      },
+      "dob": { "date": "1946-07-17T10:46:56.352Z", "age": 77 },
+      "registered": { "date": "2005-09-18T18:04:16.340Z", "age": 18 },
+      "phone": "983-494-186",
+      "cell": "616-477-018",
+      "id": { "name": "DNI", "value": "36366768-Y" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/24.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/24.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/24.jpg"
+      },
+      "nat": "ES"
+    }
+  ],
+  "info": {
+    "seed": "f40ddddaa6c30f58",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
