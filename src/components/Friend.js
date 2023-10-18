@@ -6,7 +6,7 @@ const Friend = (props) => {
   const { friend, isFetching, error, findFriend } = props;
 
   if (error) {
-    return <h2>Error: {error}</h2>;
+    return <h2 id="error">Error: {error}</h2>;
   }
 
   if (isFetching) {

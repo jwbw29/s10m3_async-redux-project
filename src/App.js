@@ -6,7 +6,6 @@ import Friend from "./components/Friend";
 function App() {
   return (
     <div className="App">
-      Async Redux Project
       <div>
         <Friend />
       </div>
