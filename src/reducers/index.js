@@ -1,3 +1,10 @@
+import {
+  FIND_FRIEND,
+  FIND_FRIEND_SUCCESS,
+  FIND_FRIEND_ERROR,
+  SET_IS_FETCHING,
+} from "../actions";
+
 const initialState = {
   friend: {
     name: {
@@ -10,7 +17,7 @@ const initialState = {
       medium: "https://randomuser.me/api/portraits/med/women/24.jpg",
       thumbnail: "https://randomuser.me/api/portraits/thumb/women/24.jpg",
     },
-    age: 77,
+    dob: { age: 77 },
     location: {
       state: "Castilla y León",
       country: "Spain",
@@ -23,6 +30,12 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case SET_IS_FETCHING:
+      return { ...state, isFetching: action.payload };
+    case FIND_FRIEND_SUCCESS:
+      return { ...state, isFetching: false, friend: action.payload };
+    case FIND_FRIEND_ERROR:
+      return { ...state, isFetching: false, error: action.payload };
     default:
       return state;
   }

@@ -11,8 +11,17 @@ export const findFriend = () => (dispatch) => {
   dispatch(setIsFetching(true));
   axios
     .get(URL)
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err));
+    .then((res) => {
+      const friend = res.data.results[0];
+      console.log(friend);
+      dispatch(setIsFetching(false));
+      dispatch(findFriendSuccess(friend));
+    })
+    .catch((err) => {
+      const message = err.message;
+      dispatch(findFriendError(message));
+    });
+
   return { type: FIND_FRIEND };
 };
 
